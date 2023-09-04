@@ -1,0 +1,455 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+ html,body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+	background-color: #191919;
+}
+
+.wrapper {
+	margin: 0px auto;
+	max-width: 938px;
+	height: auto;
+	background-color: #fff;
+	/*background-color: #191919;*/
+}
+.header {
+	display: flex;
+	flex: 1 1 auto;
+	align-items: center;
+	height: 62px;
+	padding: 0px 0 0 16px;
+	letter-spacing: -1.2px;
+	font-family: 'Roboto', sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+	border-bottom: 3px solid #000;
+	background: #fff;
+	width: 100%;
+}
+.header__left {
+	display: flex;
+	flex:1 1 auto;
+	font-size: 26px;
+	padding-top: 4px;
+}
+.header__right{
+	display: flex;
+	align-items: center;
+	height: 60px;
+	
+}
+.header__rightExplore {
+	padding: 2px 30px 0px 0;
+	letter-spacing: -0.8px;
+	
+}
+.header__rightShop {
+	min-width: 94px;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-left: 3px solid #000;
+	padding: 0 5px 0px 0;
+}
+.header__rightCart{
+	height: 60px;
+	padding: 0 3px 0px 0;
+	min-width: 92px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-left: 3px solid #000;
+}
+
+
+
+.block__One {
+	font-family: 'Roboto', sans-serif;
+	font-size: 116px;
+	text-transform: uppercase;
+	height: auto;
+	width: 100%;
+	overflow: hidden;
+	letter-spacing: 14px;
+	border-bottom: 3px solid #000;
+}
+.block_OneTop {
+	padding: 0 0 0 16px;
+	display: flex;
+	letter-spacing: 13.85px;
+	justify-content: space-between;
+	margin-top: -25px;
+}
+.block_OneBottom {
+	display: flex;
+	flex-wrap: nowrap;
+	padding: 34px 0 0 7px;
+	letter-spacing: 7.4px;
+	margin-bottom: -33px;
+}
+.block__Two {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 3px solid #000;
+	height: 395px;
+	overflow: hidden;
+}
+.block__Two  img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.block__TwoCenter img{   
+	border-left: 3px solid #000;
+}
+.block__TwoRight{
+	}
+.block__TwoRight img{
+	border-left: 3px solid #000;
+}
+
+.block__Three{
+	height: 512px;
+	overflow: hidden;
+}
+.block__Three img{
+	border-bottom: 3px solid #000;
+	width: 100%;
+	height:100%;
+	object-fit: cover;
+}
+.block__Four{
+	display: flex;
+	justify-content: center;
+	width: auto;
+	height: 100%;
+	border-bottom: 3px solid #000;
+}
+.block__Four img{
+}
+.block__FourIMG {
+	height: 310px;
+	overflow: hidden;
+}
+.block__FourIMG img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+
+}
+.block__Four-Text{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	font-size: 12px;
+	text-transform: uppercase;
+	line-height: 15px;
+	letter-spacing: 0.6px;
+	padding: 7px 10px 5px 16px;
+	border-top: 3px solid #000;
+}
+.block__FourLeft {
+	padding-left: 2px;
+	max-width: 33.3%;
+}
+.block__FourLeftText {
+}
+.block__FourCenter {
+	max-width: 33.5%;
+	border-left: 3px solid #000;
+	border-right: 3px solid #000;
+}
+.block__FourLeftImg {}
+.block__FourCenterImg {
+	padding: 1px 0 0 0;
+	background-color: #e9e3de
+}
+
+.block__FourCenterText {
+	padding: 7px 26px 5px 14px;
+}
+.block__FourRight {
+}
+.block__FourRightText {
+	padding: 7px 26px 5px 13px;
+}
+
+
+.block__Five {
+	width: 100%;
+	height: auto;
+	border-bottom: 3px solid #000;
+	font-family: 'Roboto', sans-serif;
+	text-transform: uppercase;
+	padding: 19px 0px 15px 15px;
+}
+.block_FiveTop {
+	font-size: 58px;
+	padding: 0px 0px 23px 0px;
+	letter-spacing: -1.4px;
+}
+.block__FiveBottom {
+	font-weight: 700;
+	color: #000;
+}
+.block__FiveBottom :visited{
+	color: #000;
+}
+.block__Six {
+	height: 470px;
+	display: flex;
+	flex: 1 0 50%;
+	border-bottom:3px solid #000;
+}
+.block__SixLeft {
+	overflow: hidden;
+	width: 50%;
+}
+.block__SixLeft img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.block__SixRight {
+	width: 50%;
+	padding: 17px 10px 14px 12px ;
+	letter-spacing: -0.6px;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	display: flex;
+	flex-direction: column;
+}
+.block__SixRightTop {
+	flex: 1;
+}
+.block__SixRightBottom {
+}
+
+.block__SevenRight{
+	border: none;
+}
+
+.block__SixRightBorder{
+	border-left: 3px solid #000;
+}
+.block__SevenLeft{
+	border-left: 3px solid #000;
+	overflow: hidden;
+	width: 50%;
+}
+.block__SevenLeft img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+
+
+
+.block__Eith {
+	height: auto;
+	width: 100%;
+	overflow: hidden;
+}
+.block__EithTop {
+	letter-spacing: 12.5px;
+	overflow: hidden;
+	margin-right: -30px;
+	padding-left: 15px;
+	letter-spacing: 13.2px;
+}
+.block__EithBottom {
+	padding: 53px 0 0 12px;
+	letter-spacing: 11.8px;
+	margin-bottom: -30px;
+}
+.block__Nine{
+	height: 585px;
+	width: 100%;
+	overflow: hidden;
+
+}
+
+.block__Nine img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.block__Ten {
+	height: auto;
+	padding: 17px 15px 16px 15px;
+	border: none;
+}
+
+.block__Elleven {
+	display: flex;
+	align-items: center;
+	padding: 0 0 0 4px;
+}
+.block__EllevenETC{
+	overflow: hidden;
+}
+.block__EllevenETC img{
+	width: 100%;
+	height: 235px;
+	object-fit: cover;
+	padding: 0 2px 0 0;
+}
+.block__EllevenOne {
+}
+.block__EllevenTwo {
+}
+.block__EllevenThree {
+}
+.block__EllevenFour {
+}
+.block__Twelve {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	font-family: 'Roboto', sans-serif;
+	font-size: 12px;
+	text-transform: uppercase;
+	background-color: #000;
+	color: #fff;
+	padding: 21px 46px 17px 16px;
+	letter-spacing: 0.5px;
+}
+.block__TwelveCentet :visited,
+.block__TwelveRight :visited{
+	color: #fff;
+}
+.block__TwelveLeft {
+}
+.block__TwelveLeftTop {
+	font-weight: 600;
+}
+.block__TwelveLeftBottom {
+	padding-top: 4px;
+	letter-spacing: 0.4px;
+}
+.block__TwelveCentet {
+	padding: 0 10px;
+
+}
+.block__TwelveRight span
+{
+	content: '';
+	position: absolute;
+	width: 16px;
+	height: 1.5px;
+	background: #fff;
+	margin: 5px 0 0 11px;
+
+
+}
+.block__TwelveRight::before {
+	content: '';
+	position: absolute;
+	width: 8px;
+	height: 1.5px;
+	transform: rotate(45deg);
+	background-color: #fff;
+	margin: 3px 0 0 95px;
+}
+.block__TwelveRight::after {
+	content: '';
+	position: absolute;
+	width: 6px;
+	height: 1.5px;
+	transform: rotate(-45deg);
+	background-color: #fff;
+	margin: 8px 0 0 21px;
+}
+.block__Thirteen {
+	display: flex;
+	height: 205px;
+}
+.block__ThirteenETC{
+	padding: 9px 0px 0 14px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 12px;
+	text-transform: uppercase;
+	line-height: 15px;
+	letter-spacing: 0.2px;
+	font-weight: 700;
+}
+.block__ThirteenLeft {
+	width: 33.3%;
+	
+}
+.block__ThirteenLeftTop {
+	padding: 0px 0px 0 2px;
+}
+.block__ThirteenLeftBottom {
+	padding: 17px 12px 0 2px;
+	line-height: 15.7px;
+	letter-spacing: 0.25px;
+}
+.block__ThirteenLeftBottom span{
+	letter-spacing: 0.6px;
+	padding-right: 15px;
+}
+.block__ThirteenCenter {
+	border-left: 3px solid #000;
+	width: 33.3%;
+}
+.block__ThirteenCenterTop {
+}
+.block__ThirteenCenterBottom {
+	padding: 18px 15px 0 0 ;
+}
+.block__ThirteenRight {
+	line-height: 15.5px;
+	border-left: 3px solid #000;
+}
+.block__ThirteenRight :visited{
+	color: #000;
+}
