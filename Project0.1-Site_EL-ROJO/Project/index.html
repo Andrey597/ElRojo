@@ -6,16 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/JS.js">
 </head>
 <body>
     <div class="wrapper">
         <header class="header">
             <div class="header__left">el rojo</div>
-            <div class="header__right">
-                <div class="header__rightExplore">Explore</div>
-                <div class="header__rightShop">Shop</div>
-                <div class="header__rightCart">Cart</div>
+            <div class="header_burger">
+                <span></span>
             </div>
+            <ul class="header__right">
+                <li class="header__rightExplore"><a href="">Explore</a></li>
+                <li class="header__rightShop"><a href="">Shop</a></li>
+                <li class="header__rightCart"><a href="">Cart</a></li>
+            </ul>
         </header>
         <div class="block__One">
             <div class="block_OneTop">all natural</div>
@@ -172,7 +176,11 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script>
-       
+       $(document).ready(function(){
+    $('.header_burger').click(function(event){
+        $('.header_burger,.header__right').toggleClass('active')
+    })
+})
     </script>
 </body>
 </html>
