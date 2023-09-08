@@ -81,7 +81,9 @@ body{
 	display: flex;
 	align-items: center;
 	height: 60px;
-	
+}
+.header__right a:visited{
+	color: #000;
 }
 .header__rightExplore {
 	padding: 2px 30px 0px 0;
@@ -143,6 +145,9 @@ body{
 	.block_OneBottom {
 		padding: 7px 0 0 7px;
 	}
+	body.lock{
+		overflow: hidden;
+	  }
 
 
 }
@@ -644,10 +649,14 @@ body{
 	
 	@media(max-width:935px){
 		.block__One {
-			font-size: 95px;
+			font-size: 35px;
 			text-align: center;
 		}
+		.block_OneTop {
+			margin-top: -10px;
+		}
 		.block_OneBottom {
+			margin-bottom: -10px;
 			padding: 7px 0 0 7px;
 		}
 	
@@ -655,35 +664,12 @@ body{
 	}
 	
 	.block__Two {
-		display: flex;
-		justify-content: space-between;
-		border-bottom: 3px solid #000;
-		height: 395px;
-		overflow: hidden;
-	}
-	.block__Two  img{
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-	}
-	.block__TwoCenter img{   
-		border-left: 3px solid #000;
-	}
-	.block__TwoRight{
+		height: 320px;
 		}
-	.block__TwoRight img{
-		border-left: 3px solid #000;
-	}
 	
 	.block__Three{
-		height: 512px;
+		height: 270px;
 		overflow: hidden;
-	}
-	.block__Three img{
-		border-bottom: 3px solid #000;
-		width: 100%;
-		height:100%;
-		object-fit: cover;
 	}
 	.block__Four{
 		display: flex;
@@ -695,125 +681,23 @@ body{
 	.block__Four img{
 	}
 	.block__FourIMG {
-		height: 310px;
-		overflow: hidden;
-	}
-	.block__FourIMG img{
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-	
+		height: 200px;
 	}
 	.block__Four-Text{
-		font-family: 'Roboto', sans-serif;
-		font-weight: 700;
-		font-size: 12px;
-		text-transform: uppercase;
-		line-height: 15px;
-		letter-spacing: 0.6px;
-		padding: 7px 10px 5px 16px;
-		border-top: 3px solid #000;
-	}
-	.block__FourLeft {
-		padding-left: 2px;
-		max-width: 33.3%;
-	}
-	.block__FourLeftText {
-	}
-	.block__FourCenter {
-		max-width: 33.5%;
-		border-left: 3px solid #000;
-		border-right: 3px solid #000;
-	}
-	.block__FourLeftImg {}
-	.block__FourCenterImg {
-		padding: 1px 0 0 0;
-		background-color: #e9e3de
+		font-size: 10px;
 	}
 	
-	.block__FourCenterText {
-		padding: 7px 26px 5px 14px;
-	}
-	.block__FourRight {
-	}
-	.block__FourRightText {
-		padding: 7px 26px 5px 13px;
-	}
-	
-	
-	.block__Five {
-		width: 100%;
-		height: auto;
-		border-bottom: 3px solid #000;
-		font-family: 'Roboto', sans-serif;
-		text-transform: uppercase;
-		padding: 19px 0px 15px 15px;
-	}
 	.block_FiveTop {
-		font-size: 58px;
-		padding: 0px 0px 23px 0px;
-		letter-spacing: -1.4px;
-	}
-	.block__FiveBottom {
-		font-weight: 700;
-		color: #000;
-	}
-	.block__FiveBottom :visited{
-		color: #000;
+		font-size: 25px;
+		padding: 0px 10px 13px 0px;
 	}
 	.block__Six {
-		height: 470px;
+		height: 190px;
 		display: flex;
 		flex: 1 0 50%;
 		border-bottom:3px solid #000;
 	}
-	.block__SixLeft {
-		overflow: hidden;
-		width: 50%;
-	}
-	.block__SixLeft img{
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-	}
-	.block__SixRight {
-		width: 50%;
-		padding: 17px 10px 14px 12px ;
-		letter-spacing: -0.6px;
-		text-transform: uppercase;
-		font-size: 14px;
-		font-family: 'Roboto', sans-serif;
-		font-weight: 700;
-		display: flex;
-		flex-direction: column;
-	}
-	.block__SixRightTop {
-		flex: 1;
-	}
-	.block__SixRightBottom {
-	}
-	
-	.block__SevenRight{
-		border: none;
-	}
-	
-	.block__SixRightBorder{
-		border-left: 3px solid #000;
-	}
-	.block__SevenLeft{
-		border-left: 3px solid #000;
-		overflow: hidden;
-		width: 50%;
-	}
-	.block__SevenLeft img{
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-	}
-	
-	
-	
-	
+
 	.block__Eith {
 		height: auto;
 		width: 100%;
@@ -828,28 +712,15 @@ body{
 		letter-spacing: 13.2px;
 	}
 	.block__EithBottom {
-		padding: 53px 0 0 12px;
+		padding: 0px 0 0 12px;
 		letter-spacing: 11.8px;
-		margin-bottom: -30px;
-	}
-	
-	@media(max-width:935px){
-		.block__EithBottom {
-			padding: 12px 0 0 0;
-		}
-	
+		margin-bottom: -10px;
 	}
 	.block__Nine{
-		height: 585px;
+		height: 150px;
 		width: 100%;
 		overflow: hidden;
 	
-	}
-	
-	.block__Nine img{
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
 	}
 	
 	.block__Ten {
@@ -857,79 +728,22 @@ body{
 		padding: 17px 15px 16px 15px;
 		border: none;
 	}
-	
-	.block__Elleven {
-		display: flex;
-		align-items: center;
-		padding: 0 0 0 4px;
-	}
-	.block__EllevenETC{
-		overflow: hidden;
-	}
 	.block__EllevenETC img{
-		width: 100%;
-		height: 235px;
-		object-fit: cover;
-		padding: 0 2px 0 0;
+		height: 200px;
 	}
 	
 	.block__Twelve {
-		display: flex;
-		justify-content: space-between;
-		align-items: flex-end;
-		font-family: 'Roboto', sans-serif;
-		font-size: 12px;
-		text-transform: uppercase;
-		background-color: #000;
-		color: #fff;
-		padding: 21px 46px 17px 16px;
-		letter-spacing: 0.5px;
-	}
-	.block__TwelveCentet :visited,
-	.block__TwelveRight :visited{
-		color: #fff;
-	}
-	.block__TwelveLeft {
-	}
-	.block__TwelveLeftTop {
-		font-weight: 600;
-	}
-	.block__TwelveLeftBottom {
-		padding-top: 4px;
-		letter-spacing: 0.4px;
-	}
-	.block__TwelveCentet {
-		padding: 0 10px;
-	
+		font-size: 9px;
 	}
 	.block__TwelveRight span
 	{
-		content: '';
-		position: absolute;
-		width: 16px;
-		height: 1.5px;
-		background: #fff;
-		margin: 5px 0 0 11px;
-	
-	
+		margin: 3px 0 0 11px;
 	}
 	.block__TwelveRight::before {
-		content: '';
-		position: absolute;
-		width: 8px;
-		height: 1.5px;
-		transform: rotate(45deg);
-		background-color: #fff;
-		margin: 3px 0 0 95px;
+		margin: 1px 0 0 78px;
 	}
 	.block__TwelveRight::after {
-		content: '';
-		position: absolute;
-		width: 6px;
-		height: 1.5px;
-		transform: rotate(-45deg);
-		background-color: #fff;
-		margin: 8px 0 0 21px;
+		margin: 6px 0 0 21px;
 	}
 	.block__Thirteen {
 		display: flex;
@@ -938,44 +752,18 @@ body{
 	
 	}
 	.block__ThirteenETC{
-		padding: 9px 0px 10px 14px;
-		font-family: 'Roboto', sans-serif;
-		font-size: 12px;
-		text-transform: uppercase;
-		line-height: 15px;
-		letter-spacing: 0.2px;
-		font-weight: 700;
-	}
-	.block__ThirteenLeft {
-		width: 33.3%;
-		
-	}
-	.block__ThirteenLeftTop {
-		padding: 0px 0px 0 2px;
+		word-wrap: break-word;
+		padding: 9px 4px 10px 14px;
+		font-size: 8px;
+		line-height: 8px;
 	}
 	.block__ThirteenLeftBottom {
-		padding: 17px 12px 0 2px;
-		line-height: 15.7px;
-		letter-spacing: 0.25px;
-	}
-	.block__ThirteenLeftBottom span{
-		letter-spacing: 0.6px;
-		padding-right: 15px;
-	}
-	.block__ThirteenCenter {
-		border-left: 3px solid #000;
-		width: 33.3%;
+		line-height: 8px;
 	}
 	.block__ThirteenCenterTop {
 	}
-	.block__ThirteenCenterBottom {
-		padding: 18px 15px 0 0 ;
-	}
+
 	.block__ThirteenRight {
-		line-height: 15.5px;
-		border-left: 3px solid #000;
-	}
-	.block__ThirteenRight :visited{
-		color: #000;
+		line-height: 8px;
 	}
 }
