@@ -130,6 +130,7 @@ body{
 
 .block__Elleven {
 	border: 3px solid #000;
+	border-top: none;
 }
 .block__EllevenPartOne,
 .block__EllevenPartTwo{
@@ -501,6 +502,18 @@ body{
 		height: 240px;
 	}
 	
+
+	.block_Page{
+		height: 80px;
+	}
+	.block_Page a{
+		color: #000;
+	}
+	.block_Page a:visited{
+		color: #000;
+	}
+
+
 	.arrow{
 		display: block;
 		position: relative;
@@ -566,15 +579,28 @@ body{
 }
 
 .block__Elleven {
-	display: flex;
-	flex-wrap: wrap;
+	display: block;
 }
 .block__EllevenETC{
-	width: 50%;
+	width: 100%;
+}
+
+.block__EllevenPartOne,
+.block__EllevenPartTwo{
+	display: block;
+}
+.block__EllevenTwo,
+.block__EllevenThree{
+	border-left: none;
 }
 .block__EllevenETC img{
-	height: 100px;
+	height: 390px;
 }
+.block__EllevenOneBottom{
+	height: 40px;
+}
+
+
 
 .block__Five {
 	display: block;
