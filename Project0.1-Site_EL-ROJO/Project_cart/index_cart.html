@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EL_Cart</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/JS.js">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__left">el rojo</div>
+            <div class="header_burger">
+                <span></span>
+            </div>
+            <ul class="header__right">
+                <li class="header__rightCart"><a href="">menu</a></li>
+            </ul>
+        </header>
+        <div class="body__">
+            <div class="forms_">
+                <div class="forms_Address">
+                    <p>Billing address</p>
+                    <div class="forms_form">
+                        <form action="#" method="get">
+                            <div class="forms_partOne">
+                                <div>
+                                    <input  class="forms_firstName forms__ETC" placeholder="first name" tabindex="1" name="username" type="name">
+                                </div>
+                                <div>
+                                    <input class="forms_Mail forms__ETC" placeholder="Email" tabindex="3" name="email" type="text">
+                                </div>
+                                <div>
+                                    <input class="forms_Country forms__ETC" placeholder="Country" tabindex="5" name="Country" type="text">
+                                </div>
+                            </div>
+                            <div class="forms_partTwo">
+                                <div>
+                                    <input class="forms_lastName forms__ETC" placeholder="last name" tabindex="2" name="name" type="text">
+                                </div>
+                                <div>
+                                    <input class="forms_Tel forms__ETC" placeholder="Phone" tabindex="4" name="number" type="tel">
+                                </div>
+                                <div>
+                                    <input class="forms_ZipCode forms__ETC" placeholder="Zip Code" tabindex="6" name="ZipCode" type="text">
+                                </div>
+                            </div>
+
+
+
+
+    
+                        </form>     
+                    </div>
+                </div>
+            </div>
+            <div class="cart_">
+                <div class="cart_header">
+                    <p>cart</p>
+                    <a href="#">edit</a>
+                </div>
+                <div class="cart__list">
+                    <div>
+                        <img src="#" alt="">
+                        <div class="cart__lText">
+                            <div class="cart__ltTop">
+                                <a href="#">rose wine, brasilian brut</a>
+                                <p>box of 3 boorles</p>
+                            </div>
+                            <div class="cart__ltBottom">
+                                $52
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="#" alt="">
+                        <div class="cart__lText">
+                            <div class="cart__ltTop">
+                                <a href="#">non2 caramelised pear & kombu</a>
+                                <p>1 bottle</p>
+                            </div>
+                            <div class="cart__ltBottom">
+                                $27
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="date__">
+                <p>Shipping and deliver</p>
+                <p>Please select your preferred deliver date and time</p>
+                <select placeholder="deliver date" name="colors" id="">
+                    <option value="" disabled selected>Select your option</option>
+                    <option value="0">Yellow</option>
+                    <option value="1">Blue</option>
+                    <option value="2">Red</option>
+                </select>
+            </div>
+            <div class="payment__">
+                <div class="payment__sum">
+                    <div class="payment__subtoral">
+                        <p>subtotal</p>
+                        <p>$79</p>
+                    </div>
+                    <div class="payment__shipping">
+                        <p>shipping</p>
+                        <p>free</p>
+                    </div>
+                    <div class="payment__total">
+                        <p>total</p>
+                        <p>$79</p>
+                    </div>
+                </div>
+                <div class="payment__note">
+                    <a  href="#">add a note+</a>
+                </div>
+                <div class="payment__order">
+                    <a href="#">place order</a>
+                </div>
+            </div>
+        </div>
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script>
+       $(document).ready(function(){
+    $('.header_burger').click(function(event){
+        $('.header_burger,.header__right').toggleClass('active')
+        $('body').toggleClass('lock')
+    })
+})
+    </script>
+</body>
+</html>
