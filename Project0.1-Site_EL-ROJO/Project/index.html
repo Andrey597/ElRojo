@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2</title>
+    <title>El Rojo</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="js/JS.js">
 </head>
 <body>
     <div class="wrapper">
         <header class="header">
-            <div class="header__left">el rojo</div>
+            <a href="#" class="header__left">el rojo</a>
             <div class="header_burger">
                 <span></span>
             </div>
             <ul class="header__right">
-                <li class="header__rightExplore"><a href="">Explore</a></li>
-                <li class="header__rightShop"><a href="">Shop</a></li>
-                <li class="header__rightCart"><a href="">Cart</a></li>
+                <li class="header__rightExplore"><a href="../Project_explore/index _explore.html">Explore</a></li>
+                <li class="header__rightShop"><a href="../Project_shop/index _shop.html">Shop</a></li>
+                <li class="header__rightCart"><a href="../Project_cart/index_cart.html">Cart</a></li>
             </ul>
         </header>
         <div class="block__One">
@@ -73,13 +73,17 @@
             </div>
             <div class="block__SixRight block__SixRightBorder">
                 <div class="block__SixRightTop">last change to purchase the everyday set & receive special tour of nonhq</div>
-                <div class="block__SixRightBottom">read more</div>
+                <div class="block__SixRightBottom">
+                    <a href="#">read more</a>
+                </div>
             </div>
         </div>
         <div class="block__Six">
             <div class="block__SixRight block__SevenRight">
                 <div class="block__SixRightTop">tates like useng a red currant bush as a bathing suit while surfing on a chalk stick in an ocean of salty hibiscus iced tea</div>
-                <div class="block__SixRightBottom">read more</div>
+                <div class="block__SixRightBottom">
+                    <a href="#">read more</a>
+                </div>
             </div>
             <div class="block__SixLeft block__SevenLeft">
                 <img src="../Project/img/7.1.png" alt="">
@@ -123,10 +127,10 @@
                 </div>
             </div>
             <div class="block__TwelveCentet">
-                <a href="#">email</a>
+                <a href="../Project_cart/index_cart.html">email</a>
             </div>
             <div class="block__TwelveRight">
-                <a href="#">subscribe</a> <span></span>
+                <a href="../Project_cart/index_cart.html">subscribe</a> <span></span>
             </div>
         </div>
         <div class="block__Thirteen">
@@ -179,6 +183,7 @@
        $(document).ready(function(){
     $('.header_burger').click(function(event){
         $('.header_burger,.header__right').toggleClass('active')
+        $('body').toggleClass('lock')
     })
 })
     </script>
