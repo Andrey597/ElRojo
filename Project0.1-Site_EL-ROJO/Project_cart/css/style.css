@@ -66,8 +66,7 @@ body{
 	font-family: 'Roboto', sans-serif;
 	text-transform: uppercase;
 	font-weight: 700;
-	border: 3px solid #000;
-	border-top: none;
+	border-bottom: 3px solid #000;
 	background: #fff;
 	width: 100%;
 }
@@ -76,6 +75,7 @@ body{
 	flex:1 1 auto;
 	font-size: 26px;
 	padding-top: 4px;
+	color: #000;
 }
 .header__right{
 	display: flex;
@@ -85,21 +85,33 @@ body{
 .header__right a:visited{
 	color: #000;
 }
-
-.header__rightCart{
-	height: 60px;
-	padding: 0 3px 0px 0;
+.header__rightExplore {
+	padding: 2px 30px 0px 0;
+	letter-spacing: -0.8px;
+	
+}
+.header__rightShop {
 	min-width: 94px;
+	height: 60px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	border-left: 3px solid #000;
-	letter-spacing: -0.5px;
+	padding: 0 5px 0px 0;
 }
-
+.header__rightCart{
+	height: 60px;
+	padding: 0 3px 0px 0;
+	min-width: 92px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-left: 3px solid #000;
+}
 .body__{
 	display: flex;
 	flex-wrap: wrap;
+
 }
 .forms_ {
 	font-family: 'Roboto', sans-serif;
@@ -124,6 +136,7 @@ body{
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: space-between;
+	flex: 1;
 }
 .forms_firstName {
 	
@@ -195,7 +208,6 @@ body{
 	font-size: 14px;
 	font-weight: 700;
 	text-decoration:underline;
-
 }
 .cart__list {
 }
@@ -249,7 +261,7 @@ body{
 	width: 56.5%;
 	height: 246px;
 	border-right: 3px solid #000;
-	border-bottom: 3px solid #000;
+	border-left: 3px solid #000;
 	padding: 16px;
 	font-family: 'Roboto', sans-serif;
 	text-transform: uppercase;
