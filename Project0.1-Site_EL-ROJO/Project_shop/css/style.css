@@ -130,8 +130,15 @@ body{
 
 
 .block__Elleven {
+	color: #000;
 	border: 3px solid #000;
 	border-top: none;
+}
+.block__Elleven a{
+	color: #000;
+	display: flex;
+	flex-direction: column;
+	flex: 1;
 }
 .block__EllevenPartOne,
 .block__EllevenPartTwo{
@@ -182,8 +189,9 @@ body{
 	text-decoration: line-through;
 
 }
-.block__EllevenOne {
+.block__EllevenOne a{
 }
+
 .block__EllevenTwo,
 .block__EllevenThree{
 	border-left: 3px solid #000;
@@ -199,10 +207,12 @@ body{
 
 .block__EllevenSoldOut{
 	overflow: hidden;
-}
+	text-align: center;
+	}
 .block__EllevenSoldOut img{
+	width: auto;
+	height: 100%;
 	width: 100%;
-	height: 397px;
 	object-fit: cover;
 	border: none;
 	border-top: 3px solid #000;
@@ -495,14 +505,6 @@ body{
 		font-size: 8px;
 		padding: 2px 10px 8px 0px;
 	}
-	
-	.block__EllevenSoldOut{
-		overflow: hidden;
-	}
-	.block__EllevenSoldOut img{
-		height: 240px;
-	}
-	
 
 	.block_Page{
 		height: 80px;
@@ -568,6 +570,18 @@ body{
 		width: 100%;
 		height: 270px;
 		object-fit: cover;
+	}
+	.block__EllevenSoldOut{
+		overflow: hidden;
+		text-align: center;
+		}
+	.block__EllevenSoldOut img{
+		width: auto;
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+		border: none;
+		border-top: 3px solid #000;
 	}
 }
 
@@ -788,4 +802,52 @@ body{
 .block__ThirteenRight :visited{
 	color: #000;
 }
+
+}
+
+.counter_canteiner{	
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 10px;
+	align-items: center;
+}
+.items{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: rgb(150, 150, 144);
+	border-radius: 10px;
+	width: 120px;
+	height: 40px;
+}
+.items__control{
+
+}
+.items__current{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.addCard{
+	display: flex;
+	align-items: center;
+	width: auto;
+	height: 40px;
+	background-color: #000;
+	border-radius: 10px;
+	margin: 15px 0 0 5px;
+}
+.addCard button{
+	background-color: #000;
+	color: #fff;
+	font-family:'Roboto', sans-serif;
+	font-size: 12px;
+	text-transform: uppercase;
+	padding: 5px;
+	white-space: nowrap;
+}
+.text_muted{
+	display: none;
 }
